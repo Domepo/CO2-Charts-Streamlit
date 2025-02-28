@@ -169,7 +169,7 @@ def main():
     available_countries = charts.get_available_countries()
     
     # Multiselect-Widget für Länder
-    selected_countries = st.multiselect("Länder auswählen", available_countries, default=["Poland", "Malaysia"])
+    selected_countries = st.multiselect("Länder auswählen", available_countries, default=["United States", "China", "Germany"])
     if not selected_countries:
         st.warning("Bitte wähle mindestens ein Land aus.")
         return
